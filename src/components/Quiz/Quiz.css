@@ -1,0 +1,7 @@
+.question__container {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    /* border: 1px solid var(--footer); */
+    padding: 1rem;
+    grid-row-gap: 4rem;
+}

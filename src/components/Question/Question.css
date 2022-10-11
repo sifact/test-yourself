@@ -1,0 +1,19 @@
+.question {
+    display: flex;
+
+    border: 1px solid var(--footer);
+    padding: 2rem;
+    justify-content: space-around;
+    column-gap: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.prompt {
+    width: 50%;
+}
+.options {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
