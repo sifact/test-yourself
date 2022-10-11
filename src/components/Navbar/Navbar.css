@@ -1,9 +1,19 @@
+.nav__wrapper {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    margin-bottom: 4rem;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
     /* column-gap: 2rem; */
-    padding-top: 2rem;
-    margin-bottom: 4rem;
+    /* padding-top: 2rem; */
+    /* margin-bottom: 4rem; */
+    width: 100%;
 }
 
 .nav__title {

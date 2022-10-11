@@ -4,8 +4,8 @@ import "./Navbar.css";
 
 const Navbar = () => {
     return (
-        <div>
-            <nav>
+        <div className="nav__wrapper">
+            <nav className="container">
                 <h1 className="nav__title">
                     Test <span className="primary">yourself</span>
                 </h1>

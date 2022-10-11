@@ -1,12 +1,14 @@
 .question {
     display: flex;
 
-    border: 1px solid var(--footer);
+    /* border: 1px solid var(--footer); */
     padding: 2rem;
     justify-content: space-around;
     column-gap: 3rem;
     margin-bottom: 2rem;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.01);
 }
 
 .prompt {

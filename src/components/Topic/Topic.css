@@ -1,10 +1,22 @@
 .card {
-    border: 1px solid var(--footer);
-    border-radius: 10px;
+    position: relative;
+    /* border: 1px solid var(--footer); */
+    border-radius: 8px;
     padding: 0.5rem;
     text-align: center;
     transition: all 0.3s ease-in-out;
     padding-bottom: 2rem;
+    /* background: rgba(255, 255, 255, 0.05); */
+    background-image: radial-gradient(
+        circle,
+        #070606,
+        #110e10,
+        #151519,
+        #151b20,
+        #162223
+    );
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
 }
 
 .card__logo {

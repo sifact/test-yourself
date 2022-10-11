@@ -5,10 +5,10 @@ import "./Header.css";
 
 const Header = () => {
     return (
-        <div className="container">
+        <div>
             <Navbar />
 
-            <div className="header__content">
+            <div className="header__content container">
                 <div className="header__text">
                     <h2>Front End Developer Quiz </h2>
                     <p>
