@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import Option from "../Option/Option";
 import "./Question.css";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Question = ({ prompt }) => {
     const { options, correctAnswer, question } = prompt;
+
+    const displayCorrect = () => {
+        toast.success("correct answer :)", {
+            position: toast.POSITION.TOP_CENTER,
+            className: "toast-message",
+        });
+    };
+
+    const displayWrong = () =>
+        toast.error("wrong answer ):", {
+            position: toast.POSITION.TOP_CENTER,
+            className: "toast-message",
+        });
+    let correct = false;
+
     const checkValue = (e) => {
-        // console.log(e.target.defaultValue);
         if (e.target.defaultValue === correctAnswer) {
-            console.log("correct");
+            correct = true;
+            if (correct) {
+                displayCorrect();
+            }
         } else {
-            console.log("wrong");
+            correct = false;
+            displayWrong();
         }
     };
     return (
@@ -21,6 +41,7 @@ const Question = ({ prompt }) => {
                     <Option key={idx} opt={opt} checkValue={checkValue} />
                 ))}
             </div>
+            <ToastContainer />
         </div>
     );
 };

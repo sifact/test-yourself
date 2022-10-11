@@ -19,3 +19,11 @@
     flex-direction: column;
     width: 50%;
 }
+
+.toast-message {
+    background-color: #232323;
+    color: #fff;
+    font-size: 20px;
+    /* width: 34vw;
+    padding: 30px 20px; */
+}
