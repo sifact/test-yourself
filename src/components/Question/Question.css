@@ -3,14 +3,25 @@
 
     /* border: 1px solid var(--footer); */
     padding: 2rem;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     column-gap: 3rem;
     margin-bottom: 2rem;
+    flex-direction: column;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.01);
 }
 
+.question__option__wrapper {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+}
+
+.correct__ans {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 .prompt {
     width: 50%;
 }

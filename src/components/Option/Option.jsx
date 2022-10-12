@@ -5,16 +5,19 @@ const Option = ({ opt, checkValue, correctAnswer }) => {
         <div className="option">
             <div className="question__radio">
                 {" "}
-                {opt ? (
-                    <input
-                        type="radio"
-                        name="site_name"
-                        value={opt}
-                        onChange={(e) => checkValue(e)}
-                    />
-                ) : undefined}
-                {"  "}
-                <span>{opt}</span>
+                <label>
+                    {opt ? (
+                        // <label></label>
+                        <input
+                            type="radio"
+                            name="opt"
+                            value={opt}
+                            onChange={(e) => checkValue(e)}
+                        />
+                    ) : undefined}
+                    {"  "}
+                    <span>{opt}</span>
+                </label>
             </div>
         </div>
     );
