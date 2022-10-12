@@ -15,28 +15,32 @@ const Statistics = () => {
 
     const data = chartData.data;
     return (
-        <ResponsiveContainer className="container" width={800} height={400}>
-            <AreaChart
-                data={data}
-                margin={{
-                    top: 10,
-                    right: 30,
-                    left: 0,
-                    bottom: 0,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Area
-                    type="monotone"
-                    dataKey="total"
-                    stroke="#8884d8"
-                    fill="var(--primary)"
-                />
-            </AreaChart>
-        </ResponsiveContainer>
+        <div className="container">
+            <ResponsiveContainer aspect={2.1}>
+                <AreaChart
+                    // width={300}
+                    // height={300}
+                    data={data}
+                    margin={{
+                        top: 10,
+                        right: 30,
+                        left: 0,
+                        bottom: 0,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip />
+                    <Area
+                        type="monotone"
+                        dataKey="total"
+                        stroke="#8884d8"
+                        fill="var(--primary)"
+                    />
+                </AreaChart>
+            </ResponsiveContainer>
+        </div>
     );
 };
 

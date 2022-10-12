@@ -21,3 +21,34 @@ section .box .card h1 {
 section .box .card .content {
     text-align: left;
 }
+@media screen and (max-width: 992px) {
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 500px);
+        grid-gap: 2rem;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 300px);
+        grid-gap: 2rem;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .box {
+        display: grid;
+        grid-template-columns: repeat(1, 250px);
+        grid-gap: 2rem;
+        justify-content: center;
+    }
+}
