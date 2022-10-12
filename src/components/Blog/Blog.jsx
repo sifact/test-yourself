@@ -18,7 +18,8 @@ const Blog = () => {
                             single-page web application with navigation without
                             the page refreshing as the user navigates. It uses
                             component structure to call components, which
-                            display the appropriate information. <br />
+                            display the appropriate information.
+                            <h1></h1>
                             It is also use for Active Link, data loading, data
                             mutations.
                         </p>
@@ -41,10 +42,12 @@ const Blog = () => {
                         the DOM element in the functional component. The useRef
                         returns a mutable ref object. This object has a property
                         called .current. The value is persisted in the
-                        refContainer.current property. The .current property
-                        could be initialized to the passed argument initialValue
-                        fo instance, useRef(initialValue). The object can
-                        persist a value for a full lifetime of the component.
+                        refContainer.current property.
+                        <h1></h1>
+                        The .current property could be initialized to the passed
+                        argument initialValue for instance,
+                        useRef(initialValue). The object can persist a value for
+                        a full lifetime of the component.
                     </div>
                 </div>
             </div>

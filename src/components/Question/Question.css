@@ -38,3 +38,56 @@
     /* width: 34vw;
     padding: 30px 20px; */
 }
+@media screen and (max-width: 992px) {
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .question__option__wrapper {
+        flex-direction: column;
+
+        justify-content: center;
+    }
+
+    .prompt {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .options {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card__wrapper {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .header__text {
+        z-index: 1;
+    }
+
+    .nav__link {
+        z-index: 3;
+    }
+    .header__content {
+        z-index: 1;
+        margin-top: 12rem;
+    }
+
+    .question__container {
+        margin-top: 8rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .card__wrapper {
+        grid-template-columns: repeat(1, 270px);
+    }
+    .question {
+        padding: 0.87rem;
+    }
+}

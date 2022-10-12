@@ -9,3 +9,57 @@ section.home {
     grid-gap: 1.5rem;
     margin-top: 6rem;
 }
+
+@media screen and (max-width: 992px) {
+    .card__wrapper {
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+    }
+}
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__text {
+        text-align: center;
+    }
+
+    .header__content p {
+        width: 100% !important;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .card__wrapper {
+        grid-template-columns: repeat(2, 250px);
+        /* justify-content: center; */
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card__wrapper {
+        grid-template-columns: repeat(1, 300px);
+    }
+
+    .header__text {
+        z-index: 1;
+    }
+
+    .nav__link {
+        z-index: 3;
+    }
+    .header__content {
+        z-index: 1;
+        margin-top: 12rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .card__wrapper {
+        grid-template-columns: repeat(1, 270px);
+    }
+}
