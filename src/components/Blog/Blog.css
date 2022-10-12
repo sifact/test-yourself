@@ -1,3 +1,6 @@
+section.box__wrapper {
+    margin-bottom: 4rem;
+}
 .box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -20,6 +23,10 @@ section .box .card h1 {
 }
 section .box .card .content {
     text-align: left;
+}
+
+div.space {
+    margin-top: 1rem;
 }
 @media screen and (max-width: 992px) {
 }
