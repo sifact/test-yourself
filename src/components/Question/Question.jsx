@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+// import React, { useEffect, useRef, useState } from "react";
 import Option from "../Option/Option";
 import "./Question.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -19,11 +19,12 @@ const Question = ({ prompt }) => {
             position: toast.POSITION.TOP_CENTER,
             className: "toast-message",
         });
-    let correct = false;
 
+    let correct = false;
     const checkValue = (e) => {
         if (e.target.defaultValue === correctAnswer) {
             correct = true;
+
             if (correct) {
                 displayCorrect();
             }
@@ -32,13 +33,18 @@ const Question = ({ prompt }) => {
             displayWrong();
         }
     };
+
     return (
         <div className="question container">
-            <div className="prompt">{question}</div>
+            <div className="prompt">{question.slice(3, -4)}</div>
             <div className="options">
-                <Option />
                 {options.map((opt, idx) => (
-                    <Option key={idx} opt={opt} checkValue={checkValue} />
+                    <Option
+                        key={idx}
+                        opt={opt}
+                        checkValue={checkValue}
+                        correctAnswer={correctAnswer}
+                    />
                 ))}
             </div>
             <ToastContainer />

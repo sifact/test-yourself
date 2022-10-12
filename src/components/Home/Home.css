@@ -1,9 +1,11 @@
 section.home {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
+    margin-bottom: 4rem;
 }
 
 .card__wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1.5rem;
+    margin-top: 6rem;
 }

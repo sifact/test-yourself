@@ -1,22 +1,15 @@
 import React from "react";
 import "./Option.css";
-const Option = ({ opt, checkValue }) => {
-    // console.log(opt);
-    // console.log(checkValue);
+const Option = ({ opt, checkValue, correctAnswer }) => {
     return (
-        <div className={opt ? "option" : ""}>
+        <div className="option">
             <div className="question__radio">
                 {" "}
                 {opt ? (
                     <input
                         type="radio"
                         name="site_name"
-                        // checked={opt}
                         value={opt}
-                        //     checked={this.state.site === result.SITE_NAME}
-                        // onClick={() => {
-                        //     updateTime(time);
-                        // }}
                         onChange={(e) => checkValue(e)}
                     />
                 ) : undefined}

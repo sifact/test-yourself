@@ -27,6 +27,7 @@ span.primary {
 .nav__link {
     display: flex;
     column-gap: 2rem;
+    align-items: center;
 }
 a {
     text-decoration: none;
